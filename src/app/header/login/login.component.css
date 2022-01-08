@@ -1,0 +1,11 @@
+/* form{
+    margin-top: 50px;
+} */
+.header-center{
+    display:flex;
+	justify-content: center;
+}
+.form-center{
+    display:flex;
+	justify-content: center;
+}

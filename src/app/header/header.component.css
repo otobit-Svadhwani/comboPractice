@@ -1,0 +1,37 @@
+mat-toolbar{
+  /* background-color: #0d6977; */
+ 
+  color:#0d6977;
+  
+}
+span{
+    margin-left:10px;
+    
+    color: #0d6977;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+img{
+   
+    height:50px;
+    width:50px;
+}
+ul{
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px; 
+    margin-left:px;
+}
+li{
+    display:inline;
+    margin: 5px;
+    padding: 5px;
+}
+a:hover{
+  background-color:#0d6977;
+  display:inline-block;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+}

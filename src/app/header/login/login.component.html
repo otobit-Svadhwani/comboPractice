@@ -1,0 +1,23 @@
+
+<div class="header-center">
+  <h1>LogIn</h1>
+</div>
+<div class="form-center"> 
+  
+  <form [formGroup]="loginform" color="primary">
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Email</mat-label>
+     
+      <input type="email" matInput placeholder="Email" formControlName="email">
+      <!-- <mat-icon>email</mat-icon> -->
+      
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="accent">LogIn</button>
+  </form>
+</div>

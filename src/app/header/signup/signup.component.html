@@ -1,0 +1,28 @@
+
+<div class="header-center"> 
+   <h1>SignUp</h1>
+</div>
+
+<div class="form-center">
+   <form [formGroup]="signupform">
+  
+      <mat-form-field appearance="outline" color="warn">
+         <input type="text"  matInput placeholder="Name" formControlName="name"><br>
+         <mat-label>Name</mat-label>
+      </mat-form-field><br>
+      
+      <mat-form-field appearance="outline"  color="warn">
+         <mat-label>Email</mat-label>
+         <input type="email"  matInput placeholder="email" formControlName="email"><br>
+      </mat-form-field><br>
+     
+       <mat-form-field appearance="outline"  color="warn">
+         <mat-label>Password</mat-label>
+         <input type="password" matInput placeholder="Password" formControlName="password"><br>
+       </mat-form-field><br>
+      
+     
+      <button mat-raised-button type="button" color="warn">Signup</button>
+   </form>
+   
+</div>
