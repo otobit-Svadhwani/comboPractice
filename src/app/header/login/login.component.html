@@ -4,7 +4,7 @@
 </div>
 <div class="form-center"> 
   
-  <form [formGroup]="loginform" color="primary">
+  <form [formGroup]="loginform" (ngSubmit)="login()" >
     <mat-form-field appearance="outline" color="accent">
       <mat-label>Email</mat-label>
      
@@ -18,6 +18,6 @@
       <input type="password" matInput placeholder="Password" formControlName="password">
     </mat-form-field>
     <br>
-    <button type="submit" mat-raised-button color="accent">LogIn</button>
+    <button type="submit" mat-raised-button color="accent" [disabled]="!loginform.valid">LogIn</button>
   </form>
 </div>

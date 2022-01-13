@@ -4,11 +4,15 @@
           <span>DEMOWEB APP</span>
           <span class="example-spacer"></span>
           <ul>
+            <li>
+              <a [routerLink]="['/home']" routerLinkActive='active'>Home</a>
+          </li>
               <li>
                 <a [routerLink]="['/signup']" routerLinkActive="active">SignUp</a>
               </li>
               <li>
                 <a [routerLink]="['/login']" routerLinkActive='active'>LogIn</a>
             </li>
+            
           </ul>
 </mat-toolbar>

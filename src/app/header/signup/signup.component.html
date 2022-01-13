@@ -4,25 +4,25 @@
 </div>
 
 <div class="form-center">
-   <form [formGroup]="signupform">
+   <form [formGroup]="signupform" (ngSubmit)="signup()">
   
       <mat-form-field appearance="outline" color="warn">
-         <input type="text"  matInput placeholder="Name" formControlName="name"><br>
+         <input type="text"  matInput placeholder="Name" formControlName="name" required><br>
          <mat-label>Name</mat-label>
       </mat-form-field><br>
       
       <mat-form-field appearance="outline"  color="warn">
          <mat-label>Email</mat-label>
-         <input type="email"  matInput placeholder="email" formControlName="email"><br>
+         <input type="email"  matInput placeholder="email" formControlName="email" required><br>
       </mat-form-field><br>
      
        <mat-form-field appearance="outline"  color="warn">
          <mat-label>Password</mat-label>
-         <input type="password" matInput placeholder="Password" formControlName="password"><br>
+         <input type="password" matInput placeholder="Password" formControlName="password" required><br>
        </mat-form-field><br>
       
      
-      <button mat-raised-button type="button" color="warn">Signup</button>
+      <button mat-raised-button type="submit" color="warn" [disabled]="!signupform.valid">Signup</button>
    </form>
    
 </div>

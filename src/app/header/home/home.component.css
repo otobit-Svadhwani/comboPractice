@@ -1,0 +1,33 @@
+.maindiv{
+    height:500px;
+    width:500px;
+    display: flex;
+   
+}
+
+
+.ngdiv{
+    /* background-image:"./assets/images/bgimg.jpg" ; */
+    background-color: thistle;
+    height:80%;
+    width:80%;
+    margin-left: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+img{
+    height:150px;
+    width:150px;
+    padding-left: 100px;
+}
+.mtcard{
+    margin-left: 40px;
+    padding:60px;
+}
+mat-card{
+   height: 200px;
+   width: 200px;
+   margin-top: 20px;
+   display: inline-block;
+   
+}
